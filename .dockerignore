@@ -14,6 +14,7 @@ env/
 ENV/
 
 # Node
+**/node_modules/
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -21,6 +22,9 @@ yarn-error.log*
 .pnpm-debug.log*
 .npm
 .eslintcache
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
 
 # IDE
 .vscode/
@@ -82,4 +86,15 @@ PRD.md
 API设计文档.md
 快速启动指南.md
 *.md
+
+# Windows 特定
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# 构建产物
+dist/
+build/
+*.pptx
+*.pdf
 

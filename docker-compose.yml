@@ -36,6 +36,9 @@ services:
     build:
       context: .
       dockerfile: frontend/Dockerfile
+      # Windows 兼容性：禁用符号链接跟随
+      args:
+        - DOCKER_BUILDKIT=1
     container_name: banana-slides-frontend
     ports:
       - "3000:80"
